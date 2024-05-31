@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vert Clair</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/6-1-8.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/gsap.js"></script>
+    <script src="js/ScrollTrigger.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="site">
+        <div>
+          <img src="img/logo.png" alt="ヴェールクレール" />
+        </div>
+        <div>
+          <h1>Vert Claire</h1>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <ul>
+          <li><a class="nav-button" href="#content01">About</a></li>
+          <li><a class="nav-button" href="#content02">Menu</a></li>
+          <li><a class="nav-button" href="#content03">Shop</a></li>
+        </ul>
+      </nav>
+
+      <button type="button" class="nav-button" onClick="navFunk()">
+        <span class="mobile-only">MENU</span>
+      </button>
+    </header>
+
+    <div class="area js-area">
+      <div class="wrap">
+      <!-- ↓　アニメーションさせる要素 -->
+          <div class="item item01 js-item js-item01"></div>
+          <div class="item item02 js-item js-item02"></div>
+          <div class="item item03 js-item js-item03"></div>
+      <!-- ↑　アニメーションさせる要素 -->
+    </div>
+
+    <article id="content01" class="msg container">
+      <div class="msg-inner">
+        <div class="msg-title">
+          <h2>About</h2>
+        </div>
+
+        <section class="msg-inner1 flex">
+          <div class="text">
+            <h3>ヴェールクレールについて</h3>
+            <p>
+              いつまでも若葉のような気持ちで日々精進を積み重ね成長し、美味しいパンを提供し続けたいという想いを込めたパン屋。それが
+              「ヴェールクレール」です。
+            </p>
+          </div>
+          <div class="photo">
+            <figure>
+              <img src="img/store-img01.jpg" alt="" />
+            </figure>
+          </div>
+        </section>
+
+        <section class="msg-inner2 flex">
+          <div class="text">
+            <h3>美味しさへのこだわり</h3>
+            <p>
+              ヴェールクレールのこだわりは「道内産
+              小麦１００％で作る」ということ。パン
+              作りの小麦はもちろん、野菜など使用す
+              る食材はほとんどが道内産。素材にこだ
+              わった美味しいパンはどれも絶品です。
+            </p>
+          </div>
+          <div class="photo">
+            <figure>
+              <img src="img/store-img02.jpg" alt="" />
+            </figure>
+          </div>
+        </section>
+
+        <section class="msg-inner3 flex">
+          <div class="text">
+            <h3>真心こめて丁寧に手作り</h3>
+            <p>
+              保存料・着色料を一切使用してないので体にもやさしい無添加パンです。お子様にもぜひ食べていただきたいです。
+            </p>
+          </div>
+          <div class="photo">
+            <figure>
+              <img src="img/store-img03.jpg" alt="" />
+            </figure>
+          </div>
+        </section>
+      </div>
+    </article>
+
+    <article id="content02" class="menu container">
+      <h2>Menu</h2>
+      <section class="menu-list">
+        <ul class="slider">
+          <li>
+            <figure><img src="img/さつまいもパン.png" alt="" /></figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src="img/たっぷりモッツアレラチーズのマルゲリータ.png"
+                alt=""
+              />
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="img/たっぷり野菜のグリル焼き.png" alt="" />
+            </figure>
+          </li>
+          <li>
+            <figure><img src="img/ガーリックフランス.png" alt="" /></figure>
+          </li>
+          <li>
+            <figure>
+              <img src="img/クルミとリンゴとクリームチーズ.png" alt="" />
+            </figure>
+          </li>
+          <li>
+            <figure><img src="img/クルミゴマあんパン.png" alt="" /></figure>
+          </li>
+          <li>
+            <figure><img src="img/クルミ塩パン.png" alt="" /></figure>
+          </li>
+          <li>
+            <figure><img src="img/クロワッサン.png" alt="" /></figure>
+          </li>
+          <li>
+            <figure>
+              <img src="img/チョコチップピーナッツスコーン.png" alt="" />
+            </figure>
+          </li>
+          <li>
+            <figure><img src="img/チョコチップメロンパン.png" alt="" /></figure>
+          </li>
+          <li>
+            <figure><img src="img/枝豆と3種のチーズパン.png" alt="" /></figure>
+          </li>
+          <li>
+            <figure>
+              <img src="img/自家製ベーコンの黒こしょうのパン.png" alt="" />
+            </figure>
+          </li>
+          <li>
+            <figure><img src="img/ミルクフランス.png" alt="" /></figure>
+          </li>
+          <!--/slider-->
+        </ul>
+
+        <h3>商品一覧</h3>
+        <p>
+          北海道産の食材や、季節のフルーツなどを使ったヴェールクレールパンはやさしい味が自慢です。また、期間限定の商品などもご用意しています。ぜひご賞味ください。
+        </p>
+
+        <ul class="slider-bottom" dir="rtl">
+          <li>
+            <figure>
+              <img src="img/トマトとベーコンのグリル焼き.png" alt="" />
+            </figure>
+          </li>
+          <li>
+            <figure><img src="img/バジルとチーズの塩パン.png" alt="" /></figure>
+          </li>
+          <li>
+            <figure><img src="img/バジルソーセージ.png" alt="" /></figure>
+          </li>
+          <li>
+            <figure><img src="img/モッチモチショコラ.png" alt="" /></figure>
+          </li>
+          <li>
+            <figure><img src="img/レーズンパン.png" alt="" /></figure>
+          </li>
+          <li>
+            <figure>
+              <img src="img/ヴェールクレール特製カレーパン.png" alt="" />
+            </figure>
+          </li>
+          <li>
+            <figure><img src="img/ヴェールクレール食パン.png" alt="" /></figure>
+          </li>
+          <li>
+            <figure><img src="img/塩パン.png" alt="" /></figure>
+          </li>
+          <li>
+            <figure><img src="img/大粒ピーナッツコロネ.png" alt="" /></figure>
+          </li>
+          <li>
+            <figure><img src="img/小豆パン.png" alt="" /></figure>
+          </li>
+          <li>
+            <figure><img src="img/小豆食パン.png" alt="" /></figure>
+          </li>
+          <li>
+            <figure><img src="img/紅茶のスコーン.png" alt="" /></figure>
+          </li>
+          <li>
+            <figure><img src="img/高級ショコラフランス.png" alt="" /></figure>
+          </li>
+          <!--/slider-->
+        </ul>
+      </section>
+    </article>
+
+    <aside id="content03" class="shop container">
+      <h2>Shop</h2>
+
+      <section class="shop-list">
+        <h3>店舗一覧</h3>
+        <div class="details">
+          <section class="detail shop1">
+            <figure></figure>
+            <h4>新琴似店</h4>
+            <p>
+              〒001-0901<br />
+              札幌市北区新琴似1条2丁目10-15<br />（駐車場有）
+            </p>
+            <a
+              href="https://maps.app.goo.gl/nXXkQ5BeFoERA3c1A"
+              class="btn"
+              target="_blank"
+              >Access Map</a
+            >
+            <p>
+              TEL/FAX.011-557-6802<br />
+              E-mail/tsuji@vertclair.shop<br />
+              OPEN.10:00~18:00<br />
+              Close.月
+            </p>
+            <div class="iframe">
+              <iframe
+                src="https://vertclair-vr.favorscreation.work/"
+                width="100%"
+                height="400px"
+                frameborder="0"
+              ></iframe>
+            </div>
+          </section>
+          
+          <section class="detail shop2">
+            <figure></figure>
+            <h4>東区役所店</h4>
+            <p>
+              〒065-0012<br />
+              札幌市東区北十二条東7丁目1-15<br />
+              セレスタ札幌1F
+            </p>
+            <a
+              href="https://maps.app.goo.gl/P1kgxk25thn5zy1Y7"
+              class="btn"
+              target="_blank"
+              >Access Map</a
+            >
+            <p>
+              TEL.011-214-1206<br />
+              OPEN.10:00~20:00<br />
+              Close.日
+            </p>
+            <br>
+            <div class="iframe">
+              <iframe
+                src="https://vertclair-higashi-kuyakusyo-vr.favorscreation.net/"
+                width="100%"
+                height="400px"
+                frameborder="0"
+              ></iframe>
+            </div>
+          </section>
+          
+          <section class="detail shop3">
+            <figure></figure>
+            <h4>東札幌店</h4>
+            <p>
+              〒003-0033<br />
+              札幌市白石区東札幌三条五丁目3番30号<br />
+              パシフィック白石1階テナントA
+            </p>
+            <a
+              href="https://maps.app.goo.gl/741Mbvtu7MzJGauKA"
+              class="btn"
+              target="_blank"
+              >Access Map</a
+            >
+            <p>
+              TEL.011-827-8966<br />
+              OPEN.10:00~17:00<br />
+              Close.土・日・祝日
+            </p>
+           <br>
+            <div class="iframe">
+              <iframe
+                src="https://vertclair-higashi-sapporo-vr.favorscreation.net/"
+                width="100%"
+                height="400px"
+                frameborder="0"
+              ></iframe>
+            </div>
+          </section>
+        </div>
+      </section>
+
+    </aside>
+
+    <footer class="footer">&copy;Vert Clair All right reserved.</footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--自作のJS-->
+    <script src="js/6-1-8.js"></script>
+    <script>
+      function navFunk() {
+        document.getElementsByClassName(".nav-button").classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>
